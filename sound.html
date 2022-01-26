@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<link rel="stylesheet" href="https://use.typekit.net/mnw3ohk.css">
+
+  
+  <style>
+    @font-face { font-family: Tango; src: url('Tango BT.ttf'); } 
+            
+            body  {
+                 background-color: #F6F4F2;
+                 background-repeat: no-repeat;
+                 background-attachment: fixed;
+                 background-size: cover;
+             } 
+    /* Style the header with a tan background and some padding */
+    .header {
+      overflow: hidden;
+      
+      background-color: #F6F4F2;
+      padding: 20px 0px;
+      
+    }
+    
+    /* Style the header links */
+    .header a {
+      font-family:Tango;
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      transition: 0.3s;
+    }
+    
+    /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+    
+    /* Change the background color on mouse-over */
+    .header a:hover {
+      background-color: black;
+      color: #F6F4F2;
+    }
+    
+    /* Style the active/current link*/
+    .header a.active {
+      background-color: black;
+      color: #F6F4F2;
+    }
+    .header a.active:hover {
+      background-color: #dfdcd9;
+      color: black;
+    }
+    
+    /* Float the link section to the right */
+    .header-right {
+      float: right;
+    }
+    
+    /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .header-right {
+        float: none;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="header" style="position:sticky;">
+      <a href="index.html" class="logo" style="font-weight:normal; font-size:250%;">Isaac McKenna</a>
+      <div class="header-right">
+        <a href="layout.html" 
+        style="font-family: fantabular-mvb; font-weight: 500; font-style: italic; font-size: 75%;">
+        layout</a>
+        <a href="motion.html" 
+          style="font-family: fantabular-mvb; font-weight: 500; font-style: italic; font-size: 75%;">
+          motion</a>
+        <a class="active" href="sound.html"
+        style="font-family: fantabular-mvb; font-weight: 500; font-style: italic; font-size: 75%;">
+        sound</a>
+        <a href="image.html"
+        style="font-family: fantabular-mvb; font-weight: 500; font-style: italic; font-size: 75%;">
+        image</a>
+        <a href="about.html"
+        style="font-family: fantabular-mvb; font-weight: 500; font-style: italic; font-size: 75%;">
+        about</a>
+      </div>
+    </div>
+
+
+  </body>
+</html>
