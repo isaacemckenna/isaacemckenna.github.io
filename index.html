@@ -59,7 +59,7 @@
             
 <body>
       
- <video autoplay muted loop id="myVideo">
+ <video autoplay muted loop id="myVideo" onclick="this.paused ? this.play() : this.pause();">
   <source src="background video.mp4" type="video/mp4">
   Your browser doaes not support HTML5 video.
 </video>
