@@ -13,16 +13,13 @@
                 background-attachment: fixed;
                 background-size: cover;
             } 
-             #background-video {
-                    width: 100vw;
-                    height: 100vh;
-                    object-fit: cover;
-                    position: fixed;
-                    left: 0;
-                    right: 0;
-                    top: 0;
-                    bottom: 0;
-                    z-index: -1;
+            #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
             }
             h  { 
                 color: black;
@@ -58,15 +55,15 @@
             
 <body>
       
-
-<video id="background-video" autoplay loop muted poster="https://player.vimeo.com/video/670087041?h=16387938a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479">
-  <source src="https://player.vimeo.com/video/670087041?h=16387938a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" type="video/mp4">
-</video>  
+ <video autoplay muted loop id="myVideo">
+  <source src="background video.mp4" type="video/mp4">
+  Your browser doaes not support HTML5 video.
+</video>
       
 <h>Isaac McKenna</h>
  
-<iframe src="https://player.vimeo.com/video/670087041?h=16387938a2&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1486" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="self portrait (16mm)"></iframe>
 
+     
 <p>
 projects
 </p> 
