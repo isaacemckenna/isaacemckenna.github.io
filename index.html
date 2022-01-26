@@ -2,10 +2,7 @@
 <html>
 
 <link rel="stylesheet" href="https://use.typekit.net/mnw3ohk.css">
-      
-<video id="background-video" autoplay loop muted poster="https://player.vimeo.com/video/670087041?h=16387938a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479">
-  <source src="https://player.vimeo.com/video/670087041?h=16387938a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" type="video/mp4">
-</video>
+     
             
 <style>
 @font-face { font-family: Tango; src: url('Tango BT.ttf'); } 
@@ -16,7 +13,17 @@
                 background-attachment: fixed;
                 background-size: cover;
             } 
-            
+             #background-video {
+                    width: 100vw;
+                    height: 100vh;
+                    object-fit: cover;
+                    position: fixed;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    z-index: -1;
+            }
             h  { 
                 color: black;
                 font-family: Tango; 
@@ -51,17 +58,10 @@
             
 <body>
       
- #background-video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-}
+
+<video id="background-video" autoplay loop muted poster="https://player.vimeo.com/video/670087041?h=16387938a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479">
+  <source src="https://player.vimeo.com/video/670087041?h=16387938a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" type="video/mp4">
+</video>  
       
 <h>Isaac McKenna</h>
             
