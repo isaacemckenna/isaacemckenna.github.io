@@ -25,17 +25,22 @@
   z-index: -1;
 }
 
-            h6  { 
+            h1  { 
                 color: #F6F4F2;
                 font-family: Tango; 
                 font-size: 400%;
                 font-weight:normal;
+                transition: 0.3s;
+                display:inline-block;
+                padding:6px;
+              
             }
-         /*   h6:hover {
+            h1:hover {
               color: black;
-              background-size:cover;
+              background-color:#F6F4F2;
+              cursor:pointer;
             }*/
-            h6:hover.backgroundVid{
+            h1:hover.backgroundVid{
               filter:opacity(0%);
             }
 
@@ -79,15 +84,15 @@
             
 
             
-<body onclick="myVideo.paused ? myVideo.play() : myVideo.pause();">
+<body style="text-align:center" onclick="myVideo.paused ? myVideo.play() : myVideo.pause();">
       
  <video autoplay muted loop id="myVideo" class="backgroundVid" style="filter:opacity(100%)">
   <source src="background video.mp4" type="video/mp4">
   Your browser doaes not support HTML5 video.
 </video>
-      
-<h6 style="text-align:center;" class="hoverWord">
-  Isaac McKenna</h6>
+<div> 
+<p style="margin-top:100px"><h1 style="text-align:center;" class="hoverWord">
+  Isaac McKenna</h1></p>
 
 <div style="text-align:center">    
 
@@ -97,7 +102,7 @@
   <p> <a href="image.html">image</a> </p>
   <p> <a href="about.html">about</a> </p>
 </div>
-
+</div>
 </body>
             
 </html>
