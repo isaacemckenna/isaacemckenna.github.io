@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://use.typekit.net/mnw3ohk.css">
      
             
@@ -78,11 +79,18 @@
                 background-color: #F6F4F2;
                 padding: 6px;
             }
+            @media (max-width: 620px) {
+    #myVideo { display: none; }
+    h1 {color:black}
+    a {color:black}
+    a:hover {background-color:#dfdcd9}
+    a:visited {color:black}
 
+            }
         
 </style>
             
-
+</head>
             
 <body style="text-align:center" onclick="myVideo.paused ? myVideo.play() : myVideo.pause();">
       
