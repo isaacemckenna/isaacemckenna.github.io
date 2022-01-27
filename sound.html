@@ -3,7 +3,8 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="https://use.typekit.net/mnw3ohk.css">
+  <link rel="stylesheet" href="https://use.typekit.net/mnw3ohk.css">
+
 
   
   <style>
@@ -15,7 +16,37 @@
                  background-attachment: fixed;
                  background-size: cover;
              } 
-             
+    /* style body text*/
+    p {
+      position:relative;
+     
+      font-family:fantabular-mvb;
+      text-align: center;
+    }
+
+    /*Style footer*/  
+    .footer {
+      height:10%;
+      text-align:center;
+      background-color: black;
+      padding:30px 0px;
+      margin-top: 10%;
+      width: 100%;
+    } 
+    /*style footer links*/
+    .footer a {
+      font-family:fantabular-mvb;
+      text-align: center;
+      color:#F6F4F2;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      transition: 0.3s;
+    }  
+    .footer a:hover {
+      filter: invert(85%) sepia(0%) saturate(1336%) hue-rotate(193deg) brightness(81%) contrast(84%);
+    }
+        
     /* Style the header with a tan background and some padding */
     .header {
       position:sticky;
@@ -38,6 +69,7 @@
       line-height: 25px;
       transition: 0.3s;
     }
+    
     
     /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
     .header a.logo {
@@ -65,10 +97,15 @@
     .header-right {
       float: right;
     }
-
+    
+    /*create a centered divider for first piece of content*/
+    .worksTop {
+      margin:auto; max-width:75%;z-index:-1;
+    }
+    
     /*create a centered divider for all content*/
     .works {
-      margin:0 auto;max-width:75%;z-index:-1;
+      margin:auto; max-width:75%;z-index:-1;
     }
     
     /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -83,8 +120,14 @@
       .header-right {
         float: none;
       }
+      .worksTop{
+        margin-top:90%;
+        margin-left:auto;
+        margin-right:auto;
+        max-width:75%;
+      }
       .works{
-        margin-top:70%;
+        margin:auto;
       }
     }
   </style>
@@ -95,34 +138,46 @@
       <a href="index.html" class="logo" style="font-weight:normal; font-size:250%;">Isaac McKenna</a>
       <div class="header-right">
         <a href="layout.html" 
-        style="font-family: fantabular-mvb; font-weight: 500; font-style: italic; font-size: 75%;">
+        style="font-family: fantabular-mvb; font-style: italic; font-size: 75%;">
         layout</a>
         <a href="motion.html" 
-          style="font-family: fantabular-mvb; font-weight: 500; font-style: italic; font-size: 75%;">
+          style="font-family: fantabular-mvb; font-style: italic; font-size: 75%;">
           motion</a>
         <a class="active" href="sound.html"
-        style="font-family: fantabular-mvb; font-weight: 500; font-style: italic; font-size: 75%;">
+        style="font-family: fantabular-mvb; font-style: italic; font-size: 75%;">
         sound</a>
         <a href="image.html"
-        style="font-family: fantabular-mvb; font-weight: 500; font-style: italic; font-size: 75%;">
+        style="font-family: fantabular-mvb; font-style: italic; font-size: 75%;">
         image</a>
         <a href="about.html"
-        style="font-family: fantabular-mvb; font-weight: 500; font-style: italic; font-size: 75%;">
+        style="font-family: fantabular-mvb; font-weight: 400; font-style: italic; font-size: 75%;">
         about</a>
       </div>
     </div>
+    <div class="worksTop">
+      <div style="padding:90% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670087041?h=16387938a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%; " title="self portrait (16mm)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <p style="font-weight: 500;"> Self Portrait (16mm)</p>
+      <p> Experimental 16mm self portrait film. Shot on Bolex camera. No audio.</p>
+    </div>
+    
     <div class="works">
       <div style="padding:90% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670087041?h=16387938a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
         frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%; " title="self portrait (16mm)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-      <div style="padding:90% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670087041?h=16387938a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="self portrait (16mm)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-        <div style="padding:90% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670087041?h=16387938a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-          frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%; " title="self portrait (16mm)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-        <div style="padding:90% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670087041?h=16387938a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-          frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="self portrait (16mm)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-          <div style="padding:90% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670087041?h=16387938a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%; " title="self portrait (16mm)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-          <div style="padding:90% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670087041?h=16387938a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="self portrait (16mm)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-      </div>
+      <p style="font-weight: 500;"> Self Portrait (16mm)</p>
+      <p> Experimental 16mm self portrait film. Shot on Bolex camera. No audio.</p>
+    </div>
+
+    <div class="footer">
+        <a href="instagram.com"> <img src="instagram-seeklogo.com 2.svg" 
+          style="width:40px; height: 40px; 
+          filter: invert(100%) sepia(0%) saturate(4418%) hue-rotate(50deg) brightness(122%) contrast(91%);"> </a>
+        <a href="linkedin.com"> <img src="linkedin.svg" 
+          style="width:40px; height: 40px; 
+          filter: invert(100%) sepia(0%) saturate(4418%) hue-rotate(50deg) brightness(122%) contrast(91%);"> </a>
+        <a href="twitter.com"> <img src="twitter.svg" 
+          style="width:40px; height: 40px; 
+          filter: invert(100%) sepia(0%) saturate(4418%) hue-rotate(50deg) brightness(122%) contrast(91%);"> </a>
+    </div>
+
 </html>
