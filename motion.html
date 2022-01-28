@@ -16,6 +16,7 @@
                  background-repeat: no-repeat;
                  background-attachment: fixed;
                  background-size: cover;
+                 margin:0px;
              } 
     /* style body text*/
     p {
@@ -52,6 +53,7 @@
     .header {
       position:sticky;
       top:-50px;
+      width: 100%;
       background-color: #F6F4F2;
       padding: 70px 0px;
       z-index: 1;
@@ -71,11 +73,11 @@
       transition: 0.3s;
     }
     
-    
     /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
     .header a.logo {
       font-size: 10%;
       font-weight: bold;
+      margin-left:8px;
     }
     
     /* Change the background color on mouse-over */
@@ -97,6 +99,7 @@
     /* Float the link section to the right */
     .header-right {
       float: right;
+      margin-right: 8px
     }
     
     /*create a centered divider for first piece of content*/
@@ -108,7 +111,15 @@
     .works {
       margin:auto; max-width:75%;z-index:-1;
     }
-    
+    /* gives clips a black box behind when hovered over
+    .clip{
+      filter: drop-shadow(0 0 0 none);
+      transition: 0.3s;
+    }
+    .clip:hover{
+      filter: drop-shadow(15px 15px 0 black);
+    }
+    */
     /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
     @media screen and (max-width: 620px) {
       .header {position: absolute; width:100%; left:0px; z-index: -2; }
@@ -120,7 +131,9 @@
       }
       .header-right {
         float: none;
+        margin-right:0px;
       }
+     
       .worksTop{
         margin-top:90%;
         margin-left:auto;
@@ -136,7 +149,7 @@
 
   <body>
     <div class="header" >
-      <a href="index.html" class="logo" style="font-weight:normal; font-size:250%;">Isaac McKenna</a>
+      <a href="/" class="logo" style="font-weight:normal; font-size:250%;">Isaac McKenna</a>
       <div class="header-right">
         <a href="layout.html" 
         style="font-family: fantabular-mvb; font-style: italic; font-size: 75%;">
@@ -157,7 +170,7 @@
     </div>
 
     <div class="worksTop">
-      <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670824380?h=49e075a53a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+      <div class="clip" style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670824380?h=49e075a53a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
         frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="don&amp;#039;t you know i care.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
       <p style="font-weight: 500;"> Don't You Know I Care</p>
       <p> Exploration of art and memory, especially the practice of decoration as remembrance and honoring. Digital video with rendered overlay in Cinema 4D. Audio recorded and edited by me. </p>
@@ -165,17 +178,47 @@
     </div>
     
     <div class="works">
-      <div style="padding: 75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670809140?h=b249177271&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="outside in"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-      <p style="font-weight: 500;"> Outside In</p>
-      <p> On the liminality of screens, and technology's blurring effect on the construction of division between indoor and outdoor. Digital video and 3D render in Cinema 4D.</p>
+      <div class="clip" style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670882355?h=4b165f5cc6&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="monsters final"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <p style="font-weight: 500;"> Monsters</p>
+      <p>Exploration of micromovements in the eyes, with additional focus on themes of anxiety, existentialism, and screen as boundary. Self-produced audio track with voice-over.</p>
     </div>
 
     <div class="works">
-      <div style="padding:90% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670087041?h=16387938a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+      <div class="clip" style="padding: 75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670809140?h=b249177271&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="outside in"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <p style="font-weight: 500;"> Outside In</p>
+      <p> On the liminality of screens and technology's blurring effect on the construction of division between indoor and outdoor. Digital video and 3D render in Cinema 4D.</p>
+    </div>
+
+
+    <div class="works">
+      <div class="clip" style="padding:90% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670087041?h=16387938a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
         frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%; " title="self portrait (16mm)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
       <p style="font-weight: 500;"> Self Portrait (16mm)</p>
       <p> Experimental 16mm self portrait film. Shot on Bolex camera. No audio.</p>
+    </div>
+
+    <div class="works">
+      <div class="clip" style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670937808?h=aadd3aa2cc&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="close to home preview"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>      
+      <p style="font-weight: 500;">"Close to Home" Preview</p>
+      <p>Preview video for the release of my band's single, "Close to Home." All music written, recorded, and produced by me.</p>
+       <p> Song: "Close to Home" - The Left Lanes</p>
+    </div>
+
+    <div class="works">
+      <div class="clip" style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670885222?h=4e7c6d09a2&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="flicker preview"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <p style="font-weight: 500;">"Flicker" Preview</p>
+      <p>Preview video for the release of my band's single, "Flicker." Music written and produced by me.</p>
+       <p> Additional footage: Gabe Wood.</p>
+       <p> Song: "Flicker" - The Left Lanes</p>
+    </div>
+
+    <div class="works">
+      <div class="clip" style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/670879253?h=c052d8459a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="movement study"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      <p style="font-weight: 500;"> movement study</p>
+      <p>Study on the body and movement. Uses cuts and editing to juxtapose bodies in motion and explore micromovements. Layered sync audio.</p>
     </div>
     
 

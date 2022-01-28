@@ -16,6 +16,7 @@
                  background-repeat: no-repeat;
                  background-attachment: fixed;
                  background-size: cover;
+                 margin:0px;
              } 
     /* style body text*/
     p {
@@ -30,7 +31,7 @@
       height:10%;
       text-align:center;
       background-color: black;
-      padding:30px 0px;  
+      padding:30px 0px;
       margin-top: 10%;
       width: 100%;
     } 
@@ -52,6 +53,7 @@
     .header {
       position:sticky;
       top:-50px;
+      width: 100%;
       background-color: #F6F4F2;
       padding: 70px 0px;
       z-index: 1;
@@ -71,11 +73,11 @@
       transition: 0.3s;
     }
     
-    
     /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
     .header a.logo {
       font-size: 10%;
       font-weight: bold;
+      margin-left:8px;
     }
     
     /* Change the background color on mouse-over */
@@ -97,6 +99,7 @@
     /* Float the link section to the right */
     .header-right {
       float: right;
+      margin-right: 8px
     }
     
     /*create a centered divider for first piece of content*/
@@ -108,7 +111,15 @@
     .works {
       margin:auto; max-width:75%;z-index:-1;
     }
-    
+    /* gives clips a black box behind when hovered over
+    .clip{
+      filter: drop-shadow(0 0 0 none);
+      transition: 0.3s;
+    }
+    .clip:hover{
+      filter: drop-shadow(15px 15px 0 black);
+    }
+    */
     /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
     @media screen and (max-width: 620px) {
       .header {position: absolute; width:100%; left:0px; z-index: -2; }
@@ -120,7 +131,9 @@
       }
       .header-right {
         float: none;
+        margin-right:0px;
       }
+     
       .worksTop{
         margin-top:90%;
         margin-left:auto;
@@ -136,7 +149,7 @@
 
   <body>
     <div class="header" >
-      <a href="index.html" class="logo" style="font-weight:normal; font-size:250%;">Isaac McKenna</a>
+      <a href="/" class="logo" style="font-weight:normal; font-size:250%;">Isaac McKenna</a>
       <div class="header-right">
         <a class="active" href="layout.html" 
         style="font-family: fantabular-mvb; font-style: italic; font-size: 75%;">
@@ -155,7 +168,8 @@
         about</a>
       </div>
     </div>
-    <div class="worksTop">
+
+
      
       <p style="padding-top:20%; padding-bottom: 30%;"> under construction! </p>
     </div>
