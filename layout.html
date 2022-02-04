@@ -24,6 +24,46 @@
      
       font-family:fantabular-mvb;
       text-align: center;
+      max-width: 800px;
+      margin-left:auto;
+      margin-right: auto;
+    }
+    .pub {
+      position:relative;
+     
+      font-family:fantabular-mvb;
+      text-align: center;
+      font-size: 300%; 
+      font-weight:500; 
+      font-style: italic; 
+      margin: 0;
+      margin-top:-120px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .pub2 {
+      position:relative;
+     
+      font-family:fantabular-mvb;
+      text-align: center;
+      font-size: 220%; 
+      font-weight:500; 
+      font-style: italic; 
+      margin: 0;
+      margin-top:-110px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+    a {
+      margin-top:0px; 
+      margin-bottom: 5%; 
+      font-family: fantabular-mvb; 
+      text-decoration: none; 
+      color:black;
+    }
+
+    a:hover {
+      color:gray;
     }
 
     /*Style footer*/  
@@ -57,7 +97,7 @@
       background-color: #F6F4F2;
       padding: 70px 0px;
       z-index: 1;
-      
+      margin-bottom:50px;
       
     }
     
@@ -110,19 +150,65 @@
     
     /*create a centered divider for all content*/
     .works {
-      margin:auto; max-width:75%;z-index:-1;
+      margin:auto; 
+      max-width:75%;
+      z-index:-1;
+      text-align: center;
     }
     /* gives images a drop shadow behind when hovered over */
     .paper{
       /*filter: drop-shadow(0 0 0 none);*/
       transition: 0.3s;
-      margin-top: 6%;
-      margin-bottom: 3%;
+      display:block; 
+      margin:0 auto; 
+      margin-top: 100px; 
+      margin-bottom:70px;
+      width:100%; 
+      max-width:1200px;
+      ;
     }
     .paper:hover{
       /*filter: drop-shadow(0px 20px 15px gray);*/
       transform: scale(1.02);
       
+    }
+    .paperHead{
+      /*filter: drop-shadow(0 0 0 none);*/
+      
+      
+      display:block; 
+      margin:0 auto; 
+      margin-top: 100px; 
+      margin-bottom:70px;
+      width:100%; 
+      max-width:1200px;
+      ;
+    }
+    .paperHead2{
+      /*filter: drop-shadow(0 0 0 none);*/
+      
+      
+      display:block; 
+      margin:0 auto; 
+      margin-top: 100px; 
+      margin-bottom:70px;
+      width:100%; 
+      max-width:1200px;
+      ;
+    }
+    .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%; 
+      transform: translate(-50%, -20%);
+      width:435px;
+      color:black;
     }
     
     
@@ -150,8 +236,26 @@
         margin:auto;
       }
       .paper:hover{
-        margin-top: 6%;
-        margin-bottom: 3%;
+        margin-top: 100px; margin-bottom:70px;
+      }
+      .pub {
+        font-size: 200%;
+      }
+      .pub2 {
+        font-size: 200%;
+      }
+      .paperHead {
+        width:400px;
+        margin-top: 90%;
+      }
+      .paperHead2 {
+        width:400px;
+        
+      }
+      .centered {
+        font-size:75%;
+        width: 300px;
+        margin-top: 30px;
       }
     }
   </style>
@@ -179,13 +283,61 @@
       </div>
     </div>
     
-    
-    <div class="worksTop">
-      <img class ="paper" style="width:100%"src="pdfs/indy toc.png">
-      <p style="font-weight: 500;">The Indy TOC</p>
-      <p>Table of contents and creative direction for alt-weekly newspaper The Indy. </p>
+    <div style="text-align: center;" class="container" >
+      <img class="paperHead" style="max-width: 600px;"src="pdfs/header background.png" >
+      <div class="centered" >
+        <p class="pub">the indy</p>
+        <p>As design editor for Providence's only alt-weekly, I led creation of a cohesive aesthetic language for the newspaper.
+          This included font curation, template creation for different sections, compiling and finalizing the full paper, and editing all the layout work done by a team of 12 designers.
+        </p>
+        <a style="font-style: italic; font-weight: 500;"target="_blank" rel="noopener noreferrer" href="https://issuu.com/theindy">full issues here</a>
+      </div>
     </div>
     
+    <div class="works">
+      <img class ="paper" src="pdfs/cover poster.png">
+      <p style="font-weight: 500;">The Indy cover poster</p>
+      <p>Special edition cover and back cover that form a fold-out poster.</p>
+      <p style="font-style: italic;">Art: Sedona Cohen "Green Ecosystem"</p>
+    </div>
+
+    <div class="works">
+      <img class ="paper" src="pdfs/indy toc.png">
+      <p style="font-weight: 500;">The Indy TOC</p>
+      <p>Table of contents and Week In Review design, including custom crossword puzzle layout. Templates and fonts created and curated by me.</p>
+    </div>
+
+    <div class="works">
+      <img class ="paper"  src="images/red ink.png">
+      <p style="font-weight: 500;">Printing in Red Ink</p>
+      <p>Layout for an article focused on a local community library.</p>
+    </div>
+
+    <div class="works">
+      <img class ="paper"  src="pdfs/redux.png">
+      <p style="font-weight: 500;">Redistricting Redux</p>
+      <p>Four-page layout for an article on Rhode Island's Redistricting process. Includes layout of multiple visual elements, including infographics and secondary illustrations.</p>
+    </div>
+
+    <div class="works">
+      <img class ="paper"  src="pdfs/lit.png">
+      <p style="font-weight: 500;">Lit/X</p>
+      <p>Two-piece spread layout. On the left are two poems, on the right is a visual art piece. Layout focuses on visual symmetry across the two pages.</p>
+      <p style="font-style: italic;">Art (right): Quinn Erickson "Finishing Touch"</p>
+    </div>
+    
+    
+
+    <div style="text-align: center;" class="container" >
+      <img class="paperHead2" style="max-width: 600px;"src="pdfs/header background.png" >
+      <div class="centered" >
+        <p class="pub2">the communicator</p>
+        <p>As design editor for Providence's only alt-weekly, I led creation of a cohesive aesthetic language for the newspaper.
+          This included font curation, template creation for different sections, compiling and finalizing the full paper, and editing all the layout work done by a team of 12 designers.
+        </p>
+        <a style="font-style: italic; font-weight: 500;"target="_blank" rel="noopener noreferrer" href="https://issuu.com/chscommunicator">full issues here</a>
+      </div>
+    </div>
 
 
     <div class="footer">
@@ -200,5 +352,5 @@
         filter: invert(100%) sepia(0%) saturate(4418%) hue-rotate(50deg) brightness(122%) contrast(91%);"> </a>
       <p style="color:#F6F4F2; margin-bottom: 0;">Web design: Isaac McKenna 2022</p>
   </div>
-
+</body>
 </html>
