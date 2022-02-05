@@ -24,6 +24,9 @@
      
       font-family:fantabular-mvb;
       text-align: center;
+      max-width: 800px;
+      margin-left:auto;
+      margin-right: auto;
     }
 
     /*Style footer*/  
@@ -59,6 +62,7 @@
       z-index: 1;
       
     }
+    
     
     /* Style the header links */
     .header a {
@@ -120,8 +124,24 @@
       filter: drop-shadow(15px 15px 0 black);
     }
     */
+    .content{
+      /*filter: drop-shadow(0 0 0 none);*/
+      transition: 0.3s;
+      display:block; 
+      margin:0 auto; 
+      margin-top: 100px; 
+
+      width:100%; 
+      
+      ;
+    }
+    .content:hover{
+      /*filter: drop-shadow(0px 20px 15px gray);*/
+      transform: scale(1.02);
+      
+    }
     /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-    @media screen and (max-width: 620px) {
+    @media screen and (max-width: 620px) { 
       .header {position: absolute; width:100%; left:0px; z-index: -2; }
       .header a {
         
@@ -143,6 +163,11 @@
       .works{
         margin:auto;
       }
+      .content:hover{
+      /*filter: drop-shadow(0px 20px 15px gray);*/
+      transform: scale(1);
+      
+    }
     }
   </style>
 </head>
@@ -169,9 +194,25 @@
       </div>
     </div>
     <div class="worksTop">
-     
-      <p style="padding-top:20%; padding-bottom: 30%;"> under construction! </p>
+      
+      <img class="content" style="width:100%;" src="images/indyhoodie.png">
+      <p style="font-weight: 500;">The Indy merch design</p>
+
+      <p>Merch design for Providence alt-weekly newspaper The College Hill Independent (The Indy). Includes a lavender hoodie with white print and a black tote bag with white print.</p>
     </div>
+
+    <div class="worksTop">
+      
+      <img class="content" style="width:100%;" src="images/lanestee.png">
+      <img class="content" style="width:100%;" src="images/laneshoodie.png">
+      <img class="content" style="width:100%;" src="images/lanescd.png">
+
+      <p style="font-weight: 500;">The Left Lanes merch design and production</p>
+
+      <p>Merch design for my indie band from Ann Arbor, MI. Includes a black tee with front and back white print, a tan hoodie with front and back black print, and a CD. All clothing hand-screenprinted, all logos by me. </p>
+      <p style="font-style: italic;">City artwork on hoodie and CD by Ryan Kmieske</p>
+    </div>
+
 
     <div class="footer">
       <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/isaacmckenna/"> <img src="images/instagram-seeklogo.com 2.svg" 
