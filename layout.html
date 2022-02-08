@@ -28,6 +28,15 @@
       margin-left:auto;
       margin-right: auto;
     }
+    h2 {
+      position:relative;
+      max-width: 800px;
+      font-family:fantabular-mvb;
+      text-align: center;
+      margin:0 auto;
+      font-size: 100%;
+      font-weight:500;
+    }
     .pub {
       position:relative;
      
@@ -109,16 +118,26 @@
       text-align: center;
       padding: 12px;
       text-decoration: none;
-      font-size: 10%;
       line-height: 25px;
       transition: 0.3s;
+      margin-bottom: 0;
     }
     
     /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-    .header a.logo {
-      font-size: 10%;
-      font-weight: bold;
+    .header h1 {
+      font-weight: normal;
+      font-size: 250%;
       margin-left:8px;
+      margin-top:0;
+      margin-bottom: 0;
+      font-family:Tango;
+      float: left;
+      color: black;
+      text-align: center;
+      text-decoration: none;
+
+      line-height: 25px;
+      transition: 0.3s;
     }
     
     /* Change the background color on mouse-over */
@@ -220,7 +239,6 @@
     @media screen and (max-width: 620px) {
       .header {position: absolute; width:100%; left:0px; z-index: -2; }
       .header a {
-        
         float: none;
         display: block;
         text-align: center;
@@ -251,11 +269,18 @@
       }
       .paperHead {
         width:400px;
-        margin-top: 90%;
+        margin-top: 350px;
       }
       .paperHead2 {
         width:400px;
         
+      }
+      .header h1 {
+        
+        float: none;
+        display: block;
+        text-align: center;
+        margin-left:0;
       }
       .centered {
         font-size:75%;
@@ -268,7 +293,7 @@
 
   <body>
     <div class="header" >
-      <a href="/" class="logo" style="font-weight:normal; font-size:250%;">Isaac McKenna</a>
+      <h1><a href="/" >Isaac McKenna</a></h1>
       <div class="header-right">
         <a class="active" href="https://isaacmckenna.com/layout" 
         style="font-family: fantabular-mvb; font-style: italic; font-size: 75%;">
@@ -301,32 +326,32 @@
     
     <div class="works">
       <img class ="paper" src="pdfs/cover poster.png">
-      <p style="font-weight: 500;">The Indy cover poster</p>
+      <h2 style="font-weight: 500;">The Indy cover poster</h2>
       <p>Special edition cover and back cover that form a fold-out poster.</p>
       <p style="font-style: italic;">Art: Sedona Cohen "Green Ecosystem"</p>
     </div>
 
     <div class="works">
       <img class ="paper" src="pdfs/indy toc.png">
-      <p style="font-weight: 500;">The Indy TOC</p>
+      <h2>The Indy TOC</h2>
       <p>Table of contents and Week In Review design, including custom crossword puzzle layout. Templates and fonts created and curated by me.</p>
     </div>
 
     <div class="works">
       <img class ="paper"  src="images/red ink.png">
-      <p style="font-weight: 500;">Printing in Red Ink</p>
+      <h2>Printing in Red Ink</h2>
       <p>Layout for an article focused on a local community library.</p>
     </div>
 
     <div class="works">
       <img class ="paper"  src="pdfs/redux.png">
-      <p style="font-weight: 500;">Redistricting Redux</p>
+      <h2>Redistricting Redux</h2>
       <p>Four-page layout for an article on Rhode Island's Redistricting process. Includes layout of multiple visual elements, including infographics and secondary illustrations.</p>
     </div>
 
     <div class="works">
       <img class ="paper"  src="pdfs/lit.png">
-      <p style="font-weight: 500;">Lit/X</p>
+      <h2>Lit/X</h2>
       <p>Two-piece spread layout. On the left are two poems, on the right is a visual art piece. Layout focuses on visual symmetry across the two pages.</p>
       <p style="font-style: italic;">Art (right): Quinn Erickson "Finishing Touch"</p>
     </div>
@@ -346,7 +371,7 @@
 
     <div class="works">
       <img class ="paper"  src="pdfs/chscovers.png">
-      <p style="font-weight: 500;">Covers</p>
+      <h2>Covers</h2>
       <p>Four different cover pieces created by me. Top two designs use digital illustrations by me, with 3D rendering for the top left.
         The bottom two pieces were created, photographed, and edited by me.
       </p>
@@ -355,19 +380,19 @@
 
     <div class="works">
       <img class ="paper"  src="pdfs/digitalrev.png">
-      <p style="font-weight: 500;">The Revolution Digitized</p>
+      <h2>The Revolution Digitized</h2>
       <p>Layout for an article on progressive movements using digital organizing. Digital illustration by me.</p>
     </div>
 
     <div class="works">
       <img class ="paper"  src="pdfs/identity.png">
-      <p style="font-weight: 500;">Identity Issue intro spread</p>
+      <h2>Identity Issue intro spread</h2>
       <p>Intro spread for a special section focused on exploration of identity. Artword created and photographed by me.</p>
     </div>
 
     <div class="works">
       <img class ="paper"  src="pdfs/change.png">
-      <p style="font-weight: 500;">Change</p>
+      <h2>Change</h2>
       <p>Four page layout for a feature article written by me. Issue covers topics of race and tokenization at a majority-white school. Photography and design by me.</p>
     </div>
 
