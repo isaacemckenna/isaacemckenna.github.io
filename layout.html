@@ -14,13 +14,17 @@
   <style>
     @font-face { font-family: Tango; src: url('Tango BT.ttf'); } 
             
-            body  {
-                 background-color: #F6F4F2;
-                 background-repeat: no-repeat;
-                 background-attachment: fixed;
-                 background-size: cover;
-                 margin:0px;
-             } 
+    body  {
+      background-color: #F6F4F2;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      margin:0px;
+    } 
+
+    img::selection{
+      background:none;
+    }
     /* style body text*/
     p {
       position:relative;
@@ -30,6 +34,22 @@
       max-width: 800px;
       margin-left:auto;
       margin-right: auto;
+    }
+    p::selection{
+      color:#F6F4F2;
+      background: black;
+    }
+    p::-moz-selection{
+      color:#F6F4F2;
+      background: black;
+    }
+    h2::selection{
+      color:#F6F4F2;
+      background: black;
+    }
+    h2::-moz-selection{
+      color:#F6F4F2;
+      background: black;
     }
     h2 {
       position:relative;
@@ -72,6 +92,14 @@
       font-family: fantabular-mvb; 
       text-decoration: none; 
       color:black;
+    }
+    a::selection{
+      color:#F6F4F2;
+      background:black;
+    }
+    a::-moz-selection{
+      color:#F6F4F2;
+      background:black;
     }
 
     a:hover {
@@ -141,6 +169,12 @@
 
       line-height: 25px;
       transition: 0.3s;
+    }
+    .header a::selection{
+      background:none;
+    }
+    .header a::-moz-selection{
+      background:none;
     }
     
     /* Change the background color on mouse-over */
@@ -358,8 +392,6 @@
       <p>Two-piece spread layout. On the left are two poems, on the right is a visual art piece. Layout focuses on visual symmetry across the two pages.</p>
       <p style="font-style: italic;">Art (right): Quinn Erickson "Finishing Touch"</p>
     </div>
-    
-    
 
     <div style="text-align: center;" class="container" >
       <img class="paperHead2" style="max-width: 600px;"src="pdfs/header background.png" >
@@ -378,7 +410,6 @@
       <p>Four different cover pieces created by me. Top two designs use digital illustrations by me, with 3D rendering for the top left.
         The bottom two pieces were created, photographed, and edited by me.
       </p>
-      
     </div>
 
     <div class="works">
