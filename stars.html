@@ -300,6 +300,8 @@ input:checked + .slider:before {
     // }
     function drawStars(iterations, smallest, largest) {
       $("#sky").empty();
+      let viewportHeight = window.innerHeight;
+      let viewportWidth = window.innerWidth;
       for (let i = 1; i < iterations; i++) {
         setTimeout(function timer() {
           var star = randomNumber(smallest,largest)
