@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+  <script type="text/javascript" src="clouds2.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore newspaper and magazine design by Isaac McKenna. Isaac is Managing Editor of the Indy and was previously Editor in Chief of the Communicator.">
+
+
+  <link rel=canonical href="https://isaacmckenna.com/clouds"/>
+  <link rel="stylesheet" href="https://use.typekit.net/mnw3ohk.css">
+  <link rel="stylesheet" href="https://use.typekit.net/mnw3ohk.css">
+  <link rel="icon" type="image/x-icon" href="/images/isaac favicon-01.png">
+  <title>Clouds</title> 
+  <style>
+  @font-face {
+  font-family:"byker";
+  src:url("https://use.typekit.net/af/5d4ad5/00000000000000007735b016/30/l?subset_id=2&fvd=n2&v=3") format("woff2"),url("https://use.typekit.net/af/5d4ad5/00000000000000007735b016/30/d?subset_id=2&fvd=n2&v=3") format("woff"),url("https://use.typekit.net/af/5d4ad5/00000000000000007735b016/30/a?subset_id=2&fvd=n2&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:200;font-stretch:normal;
+  }
+
+  @font-face {
+  font-family:"byker";
+  src:url("https://use.typekit.net/af/9cacc0/00000000000000007735b00e/30/l?subset_id=2&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/9cacc0/00000000000000007735b00e/30/d?subset_id=2&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/9cacc0/00000000000000007735b00e/30/a?subset_id=2&fvd=i4&v=3") format("opentype");
+  font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+  }
+
+  @font-face {
+  font-family:"byker";
+  src:url("https://use.typekit.net/af/b70336/00000000000000007735b012/30/l?subset_id=2&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/b70336/00000000000000007735b012/30/d?subset_id=2&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/b70336/00000000000000007735b012/30/a?subset_id=2&fvd=n4&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+  }
+
+  @font-face {
+  font-family:"byker";
+  src:url("https://use.typekit.net/af/fd020d/00000000000000007735b01f/30/l?subset_id=2&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/fd020d/00000000000000007735b01f/30/d?subset_id=2&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/fd020d/00000000000000007735b01f/30/a?subset_id=2&fvd=i7&v=3") format("opentype");
+  font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+  }
+
+  @font-face {
+  font-family:"byker";
+  src:url("https://use.typekit.net/af/408318/00000000000000007735b020/30/l?subset_id=2&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/408318/00000000000000007735b020/30/d?subset_id=2&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/408318/00000000000000007735b020/30/a?subset_id=2&fvd=n7&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+  }
+
+  @font-face {
+  font-family:"byker";
+  src:url("https://use.typekit.net/af/6668f2/00000000000000007735b024/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2"),url("https://use.typekit.net/af/6668f2/00000000000000007735b024/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff"),url("https://use.typekit.net/af/6668f2/00000000000000007735b024/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:900;font-stretch:normal;
+  }
+    body  {
+      background-color: #87CEEB; 
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      margin:0;
+      padding:0;
+    } 
+
+    a {
+      /* margin: 50px; */
+      font-family:Byker;
+      position:absolute;
+      color: white;
+      font-size: 50px;
+      font-weight: 900;
+      z-index: 10;
+      margin-left:50px;
+      top: 40px;
+      margin-right:400px;
+      text-decoration:none;
+      line-height: 100%;
+      margin-top:0;
+    }
+
+    a:hover {
+      color:black;
+      transition: .4s;
+    }
+      
+    p {
+      /* margin: 50px; */
+      font-family:Byker;
+      position:absolute;
+      top: 55px;
+      right: 50px;
+      vertical-align: bottom;
+      color: rgb(255, 255, 255);
+      font-size: 30px;
+      z-index: 10;
+      margin-left:50px;
+      line-height:100%;
+      margin-top: 0;
+    }
+    #sky {
+      padding:0;
+    }
+    svg  {
+      position:absolute;
+      margin:0;
+      z-index: -10;
+      
+    }
+label {
+  /* margin:50px; */
+  position:absolute;
+}
+    /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #87CEEB;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked ~ .slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: black;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: white;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px white;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+  </style>
+  
+</head>
+ 
+<body>
+  <div>
+    <a href="./stars.html" target="_self">what do you see in the clouds?</a>
+    
+    <!-- Rounded switch
+  <label id="onoff" class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </label> -->
+  
+  <svg id="sky" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+    
+  </svg>
+  <p>isaac mckenna</p>
+  <script>
+    
+    var svg = document.getElementById("sky");
+      console.log(svg);
+    var circles = [];
+    function randomNumber(min, max) {
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    };
+    
+    let viewportHeight = window.innerHeight;
+    let viewportWidth = window.innerWidth;
+
+    function drawCircle(x,y,r) {
+      var element = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      element.setAttributeNS(null, 'cx', x.toString());
+      element.setAttributeNS(null, 'cy', y.toString());
+      element.setAttributeNS(null, 'r', r.toString());
+      element.style ="fill:white; opacity:10%";
+      svg.appendChild(element);
+      };
+      
+      function randomAngle() {
+        var angle = randomNumber(0, 359);
+        return angle;
+      };
+      
+      function randomHorz(angle) {
+        var randomHorz = 30 * Math.cos(angle * Math.PI/180);
+        return randomHorz;
+      };
+
+      function randomVert(angle) {
+        var randomVert = 30 * Math.sin(angle * Math.PI/180);
+        return randomVert;
+      };
+
+
+
+      function drawCloud(horz, vert, iterations){
+        var currentHorz = viewportWidth/2;
+        var currentVert = viewportHeight/2;
+        var currentAngle = randomAngle();
+
+        for (let i = 1; i < 2000; i++) {
+          
+          setTimeout(function timer() {
+            currentAngle = randomAngle();
+            currentHorz = currentHorz + randomHorz(currentAngle);
+            currentVert = currentVert + randomVert(currentAngle);
+            if((currentHorz>viewportWidth||currentHorz<0)||(currentVert>viewportHeight||currentVert<0)) {
+              currentHorz = randomNumber(0,viewportWidth)
+              currentVert = randomNumber(0,viewportHeight)
+              drawCircle(currentHorz,currentVert, randomNumber(0,50))
+            }
+            var star = randomNumber(3,8)
+            drawCircle(currentHorz,currentVert, randomNumber(30,50));
+          }, i*.5);
+        }
+      };
+      drawCloud()
+    </script>
+   
+   
+   <!-- <script>
+    
+    var svg = document.getElementById("sky");
+      console.log(svg);
+    var circles = [];
+    function randomNumber(min, max) {
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    };
+    
+    let viewportHeight = window.innerHeight;
+    let viewportWidth = window.innerWidth;
+
+    function drawCircle(x,y,r) {
+      var element = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      element.setAttributeNS(null, 'cx', x.toString());
+      element.setAttributeNS(null, 'cy', y.toString());
+      element.setAttributeNS(null, 'r', r.toString());
+      element.style ="fill:white ; opacity:50%";
+      svg.appendChild(element);
+      };
+      
+    // let i=0;
+    // while (i < 300) {
+    //   drawCircle(randomNumber(0,2000),randomNumber(0,2000), 100);
+    //   i++;
+    // }
+    for (let i = 1; i < 1000; i++) {
+      setTimeout(function timer() {
+        var star = randomNumber(3,8)
+        drawCircle(randomNumber(0,viewportWidth),randomNumber(0,viewportHeight), 30);
+      }, i * 10);
+    }
+    </script> -->
+  </div>
+</body>
