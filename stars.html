@@ -2,6 +2,7 @@
 <html>
 <head>
   <script type="text/javascript" src="clouds2.js"></script>
+  <script type="text/javascript" src="jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Explore newspaper and magazine design by Isaac McKenna. Isaac is Managing Editor of the Indy and was previously Editor in Chief of the Communicator.">
 
@@ -79,7 +80,7 @@
       transition: .4s;
     }
       
-    p {
+    a.home {
       /* margin: 50px; */
       font-family:Byker;
       position:absolute;
@@ -89,10 +90,13 @@
       color: rgb(255, 255, 255);
       font-size: 30px;
       z-index: 10;
+      margin-right: 0px;
+      font-weight: normal;
       margin-left:50px;
       line-height:100%;
       margin-top: 0;
     }
+    a.home:hover{color:#87CEEB}
     #sky {
       padding:0;
     }
@@ -201,10 +205,10 @@ input:checked + .slider:before {
     <span class="slider round"></span>
   </label> -->
   
-  <svg id="sky" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+  <svg id="sky" onclick="drawStars(100, 4, 5); drawStars(50,1,2); "xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
    
   </svg>
-  <p>isaac mckenna</p>
+  <a class="home" href="/" target="_self">isaac mckenna</a>
   <!-- <script>
     
     var svg = document.getElementById("sky");
@@ -295,6 +299,7 @@ input:checked + .slider:before {
     //   i++;
     // }
     function drawStars(iterations, smallest, largest) {
+      $("#sky").empty();
       for (let i = 1; i < iterations; i++) {
         setTimeout(function timer() {
           var star = randomNumber(smallest,largest)
@@ -302,9 +307,9 @@ input:checked + .slider:before {
         }, i * 4);
       }
     };
-
     drawStars(100, 4, 5);
-    drawStars(50,1,2)
+    drawStars(50,1,2);
+    
     </script>
   </div>
 </body>
