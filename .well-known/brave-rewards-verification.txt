@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: isaacmckenna.com
+Token: d5475a9e50ca5f198090d99640cc26ceb3bcce5ced90797cc31fdbc83e08fa4c
