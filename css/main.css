@@ -1,38 +1,70 @@
+@font-face {
+  font-family: GTAmerica;
+  src: url("/GT-America/GT-America-Mono-Regular-Trial.otf") format("opentype");
+}
 
+@font-face {
+  font-family: GTAmerica;
+  font-style: italic;
+  src: url("/GT-America/GT-America-Mono-Regular-Italic-Trial.otf") format("opentype");
+}
+
+@font-face {
+  font-family: GTAmerica;
+  font-weight: bold;
+  src: url("/GT-America/GT-America-Mono-Bold-Trial.otf") format("opentype");
+}
+
+@font-face {
+  font-family: GTAmerica;
+  font-weight: bold;
+  font-style: italic;
+  src: url("/GT-America/GT-America-Mono-Bold-Italic-Trial.otf") format("opentype");
+}
 
 :root {
-  --black: rgb(15, 16, 15);
+  /* --black: rgb(15, 16, 15); */
+  --black: rgb(0, 0, 0);
+  /* --light-bg: rgb(208, 208, 216); */
+  --light-bg: rgba(237, 237, 237);
   --content-width: min(60vw, 1000px);
-  --title-font-size: min(80px, 80px);
-} 
+  --title-font-size: 18pt;
+}
 
 body { 
   margin: 0; 
-  background-color: var(--black);
-  color:white;
-  
+  background-color: var(--light-bg);
+  /* color:white; */
+  color: var(--black)
+}
+
+.icons img:hover {
+  transition:0.3s;
+    filter: blur(2px);
 }
 
 body::-webkit-scrollbar {
+  
   width: 15px;               /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--black);        /* color of the tracking area */
+  background: var(--light-bg);        /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: white;    /* color of the scroll thumb */
+  background-color: black;    /* color of the scroll thumb */
   
   border-radius:20px;
-  box-shadow: inset 0 0 5px rgb(0, 0, 0),
-  inset 0 0 5px rgb(0, 0, 0),inset 0 0 5px rgb(0, 0, 0);
-
+  box-shadow: inset 0 0 5px var(--light-bg),
+  inset 0 0 5px var(--light-bg),inset 0 0 5px var(--light-bg);
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: white;
-  box-shadow:inset 0 0 5px rgba(0, 0, 0,0);
+  background-color: red;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 
 }
 
@@ -64,14 +96,20 @@ body::-webkit-scrollbar-thumb:hover {
 .clip {
   width:100%;
   height:100%;
+
 }
+
+
 
 .video-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   margin-bottom:55px;
+
 }
+
+
 .video-container iframe {
   position: absolute;
   top: 0;
@@ -108,6 +146,7 @@ body::-webkit-scrollbar-thumb:hover {
   float: right;
   padding-right: min(10vw, 100px);
   transition:all .7s ;
+  
 }
 
 .pages::after {
@@ -123,33 +162,35 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: min(4vw, 30px);
   line-height: 48px;
   letter-spacing: 0.055em; */
-  font-family: rama-gothic-c, sans-serif;
-  font-weight: 900;
+  font-family: GTAmerica, monospace;
+  font-weight: 300;
   font-style: normal;
   font-size: var(--title-font-size);
   line-height: 80%;
   
-  color:white;
+  color:var(--black);
   text-decoration-color: red;
 
 
   padding-left: 40px;
-  text-shadow:0px 0px 50px var(--black);
+  text-shadow:0px 0px 50px var(--light-bg);
 
 }
 
 .pages a:hover {
   transition:.3s;
   filter:blur(2px);
-  color:white;
+  color:var(--black);
 }
 
 .topnav { 
   position:sticky;
   padding: 0;
   height:200px;
-  background: linear-gradient(180deg, var(--black) 0%, rgba(243, 233, 226, 0) 100%);
+  background: linear-gradient(180deg, var(--light-bg) 0%, rgba(243, 233, 226, .4) 75%, rgba(243, 233, 226, 0) 100%);
   z-index: 1000;
+  text-transform: uppercase;
+  margin-bottom:30px;
 }
 
 h1 a {
@@ -160,15 +201,15 @@ h1 a {
   /* font-family: 'Helvetica Neue';
   font-style: normal;
   font-weight: 200; */
-  font-family: rama-gothic-c, sans-serif;
-  font-weight: 900;
+  font-family: GTAmerica;
+  font-weight: 300;
   font-style: normal;
   font-size: var(--title-font-size);
   line-height: 80%;
-  text-shadow:0px 0px 50px var(--black);
+  text-shadow:0px 0px 50px var(--light-bg);
   /* letter-spacing: 0.055em; */
   
-  color:white;
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -192,11 +233,13 @@ h1 a {
 }
 
 p {
-  color: white;
-  font-family: transducer, sans-serif;
-  font-weight: 400;
+  /* color: white; */
+  font-family: GTAmerica, monospace;
   font-style: normal;
   line-height:30px;
+  font-kerning:normal;
+  letter-spacing: -.3px;
+  font-size:20px;
 }
 
 .buffer {
@@ -206,7 +249,7 @@ p {
 .main {
   max-width: var(--content-width);
   margin-left:auto;
-  margin-right:80px;
+  margin-right:min(10vw, 100px);
   z-index: -1000;
   
 }
@@ -215,16 +258,23 @@ p {
   display:block;
   width: var(--content-width);
   margin-left:auto;
+  -webkit-filter: blur(0px);
 
+  filter: blur(0px);
   z-index: -1000;
-  transition: .3s;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
   padding-bottom:25px;
   padding-top:25px;
 }
 
 .content:hover {
-  filter:blur(10px);
+
+  filter:blur(5px) saturate(0);
+  
 }
+
+
 
 .no-blur:hover{
   filter:blur(0px);
@@ -240,14 +290,26 @@ p {
 }
 
 h2 {
-  color: white;
-  font-family: transducer, sans-serif;
-  font-weight:bold;
+  /* color: white; */
+  margin-top:0;
+  font-family: GTAmerica, monospace;
+  font-weight:lighter;
   font-style: normal;
-  font-size:50px;
-
-
+  font-size:25px;
+  display:flex;
+  align-items: center;
+  margin-bottom: 75px;
 }
+
+h2::after {
+  content: '';
+  flex: 1;
+  margin-top:5px;
+  margin-left: 1rem;
+  height: 2px;
+  background-color: #000;
+}
+
 
 .row::after {
   content: "";
@@ -256,7 +318,7 @@ h2 {
 }
 
 h3 {
-  color: white;
+  /* color: white; */
   font-family: transducer, sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -270,7 +332,7 @@ h3 {
 
 
 a {
-  color: lightgray;
+  color: rgb(106, 106, 106);
   font-family: transducer, sans-serif;
   font-style:italic;
 
@@ -291,8 +353,8 @@ a:hover {
 }
 
 button {
-  background-color: white;
-  color:var(--black);
+  background-color: var(--black);
+  color:white;
   border: none;
   padding:15px 15px;
   transition: .3s;
@@ -323,6 +385,7 @@ hr {
 .active {
 
 text-decoration: underline;
+text-underline-offset: 10px;
 
 }
 
@@ -352,6 +415,7 @@ footer .icons {
   float:right;
   margin-right: min(10vw, 100px);
   margin-top:50px;
+  filter:invert();
   
 }
 
@@ -360,18 +424,37 @@ footer .icons {
 }
 
 
-@media screen and (max-width: 1045px) {
+@media screen and (max-width: 1300px) {
   .pages a {
     display:block;
     text-align:right;
-    line-height:100%;
+    line-height:50pt;
     z-index: 10000;
+    text-shadow: 0px 0px 10px white,0px 0px 50px var(--light-bg),0px 0px 50px var(--light-bg),0px 0px 50px var(--light-bg),0px 0px 50px var(--light-bg),0px 0px 50px var(--light-bg),0px 0px 50px var(--light-bg),0px 0px 50px var(--light-bg);
+
+    -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
   }
   
 
 .menuLinks a{
     display:none;
+    
   }
+  .menuLinks{
+    position: relative;
+  }
+  .menuLinks::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+ 
+
+
+ }
 
 .responsive a{
   display:block;
@@ -386,12 +469,10 @@ footer .icons {
 
   .top-paragraph {}
 
-  h2 {
-    font-size:30px;
-  }
+
 
   p {
-    font-size:16px;
+    font-size:14pt;
     line-height:30px;
   }
 

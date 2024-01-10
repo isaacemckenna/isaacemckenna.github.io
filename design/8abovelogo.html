@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Isaac McKenna | 8 Above</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/hamburger light.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mnw3ohk.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.1/lottie.min.js" integrity="sha512-H6aKTjvYAazW0iNuGj1f2dZvSWlt1HGZGEDsXRPETo2IB4H6v36Vl2qiZNlCRxOp0kT7iBf+7USNPavNscZGAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+
+    <link rel=canonical href="https://isaacmckenna.com/design/8abovelogo"/>
+    
+    <link rel="shortcut icon" href="/images/icons/favicon.ico"/>
+  </head>
+<body>
+  <div class="topnav" id="topnav">
+    <div class="menu prevent-select" >
+      <h1> <a href="index.html">Isaac McKenna</a> </h1>
+      <div class="pages"  id="myMenu">
+        <div id="nav-icon1" class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div id="menuLinks" class="menuLinks">
+        <a class="inactive"href="/photo.html">Photo</a>
+        <a class="inactive"href="/sculpture.html">Sculpture</a>
+        <a class="active" href="/design.html">Design</a>
+        <a class="inactive"href="/more.html">Video + More</a>
+        <a class="inactive"href="/about.html">About</a>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="main">
+    <h2>8 Above</h2>
+      <p>During Summer 2023, I was an intern for 8 Above, the production company 
+        founded by acclaimed documentary filmmaker Jon Reiss (Bomb It, Survival 
+        Research Laboratories, & more). One of the long-term tasks that I was given
+        was to generate a new visual identity for the company.
+ 
+      </p>
+      <p> The name 8 Above references the position of the sun as being just above 
+        the horizon, at sunset or sunrise. Many of Jon's clients are in a transitional 
+        moment, just beginning to break through into critical acclaim, and 8 Above
+        is there to help them through this period. For this reason, I explored 
+        several logos based on solar images and movement.</p>
+        
+        <img class="content no-blur zoom-img" style="padding-bottom:50px" src="/images/8above/8 above logo ideas-06.svg" >
+        <img class="content no-blur zoom-img" style="padding-bottom:50px" src="/images/8above/8 above logo ideas-05.svg" >
+
+        
+
+      <h3>The Sextant</h3>
+      <p>Eventually, I found that the celestial logos felt too abstract, and far too corporate
+        for the smaller, independent company it was meant for. The sextant, a tool
+        used for calculating the angle between a celestial body and the horizon,
+        felt both metaphorically and aesthetically perfect. It is a complex shape,
+        less prone to the detatched abstraction I was so far finding. And it reflects
+        a connection between everyday people and the cosmos, falling in line with 
+        the messaging Jon wanted to get across. 
+      </p>
+      <p>I started with some simple design ideas, exploring a range of ways to represent
+        the sextant. Finding myself in a rut, I turned to animation, using 3D rendering
+        in Blender to reverse-engineer a 2D logo. 
+      </p>
+      <img class="content no-blur zoom-img" style="padding-bottom:50px" src="/images/8above/workbenchstill.png" >
+      <p>I chose to split the component parts of the sextant apart and animate them
+        individually, so that they would fly together as the camera panned around them.
+        I first explored a sketched style, using rendering techniques in Blender to 
+        give a hand-drawn feel.
+      </p>
+
+      <div class="video-container" style="margin-top: 90px;">
+        <video width="100%" src="/images/8above/sketched.mp4" type="video/mp4" autoplay loop controls></video>
+        </div>
+
+        <h3>The Final Product</h3>
+        <p>I decided to ditch the sketched style in favor of a more realistic texturing.
+          I employed metal, glass, and other details including imperfections and fingerprints 
+          to give a tangible look to the sextant. Additionally, I added sound, using
+          foley and ocean recordings to imply physicality and adventure. Finally,
+          I used the animation to blend into the 2D logo I had decided on. Watch below
+           for the finished piece. 
+        </p>
+
+      <div class="video-container" style="margin-top: 90px;">
+        <iframe class="clip" src="https://www.youtube.com/embed/EOl8zP7sYa0?si=rWlQuJYJQEvfv6jZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      
+        </div>
+        <a href="/design.html"><button>Back to design</button></a>
+
+      </div>
+      
+
+
+  <footer>
+    <p>Designed and coded by Isaac McKenna ©2023</p>
+      <div class="icons">
+      <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/ikey.psd"><img style="height:30px; width:30px;"src="/svg/instagram.svg" alt=""></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/isaac-mckenna/">
+        <img style="height:30px; width:30px;"src="/svg/linkedin.svg" alt="">
+      </a>
+    </div>
+  </footer>
+
+</div>
+
+  <script type="text/javascript" src="/js/headersub.js"></script>
+  <script type="text/javascript" src="/js/hamburger.js"></script>
+  <script>
+    function toggleMenu() {
+      var x = document.getElementById("menuLinks");
+      if (x.className === "menuLinks") {
+        x.className += " responsive";
+      } else {
+        x.className = "menuLinks";
+      }
+    }
+    </script>
+</body>
+
+
+</html>
